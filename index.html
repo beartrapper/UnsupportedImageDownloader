@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image upload</title>
+</head>
+<body>
+
+    <input type="text" placeholder="paste image url here" id="image-file"/>
+    <button onclick="handleFile()" type="button">Set</button>
+    <img alt="nothing uploaded" id="image-place"/>
+    
+
+    <script>
+        function handleFile(){
+            const img = document.getElementById("image-file").value;
+            document.getElementById("image-place").src = img;
+            console.log(img)
+        }
+    </script>
+
+</body>
+</html>
